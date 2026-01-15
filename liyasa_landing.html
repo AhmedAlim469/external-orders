@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="معلم لياسة وبروفايل محترف في الطائف - واجهات داخلية وخارجية بجودة عالية والتزام تام">
+    <title>معلم لياسة وبروفايل في الطائف | واجهات وتشطيب احترافي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==================== Variables ==================== */
+        :root {
+            --charcoal: #2b2d2f;
+            --petrol-blue: #2c6e7d;
+            --light-gray: #f4f4f4;
+            --burnt-orange: #d9480f;
+            --dark-overlay: rgba(43, 45, 47, 0.85);
+            --text-primary: #2b2d2f;
+            --text-secondary: #5a5c5e;
+            --border-color: #e0e0e0;
+        }
+
+        /* ==================== Base Styles ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans Arabic', -apple-system, sans-serif;
+            background-color: #fff;
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--charcoal);
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 3rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.25rem); }
+        h3 { font-size: clamp(1.1rem, 2vw, 1.3rem); }
+        
+        p {
+            color: var(--text-secondary);
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ==================== Layout ==================== */
+        .container {
+            width: 90%;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        /* ==================== Buttons ==================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--burnt-orange);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #c13f0d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(217, 72, 15, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--charcoal);
+        }
+
+        /* ==================== Hero Section ==================== */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(var(--dark-overlay), var(--dark-overlay)),
+                        url('https://i.ibb.co/gZkTYPY9/6e65d6d2d44ffac91feb5099d9052ee8.png') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            padding: 1rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+            margin-bottom: 1.5rem;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ==================== Trust Section ==================== */
+        .trust {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .trust-item {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(217, 72, 15, 0.03) 0%, rgba(44, 110, 125, 0.05) 100%);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(217, 72, 15, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--burnt-orange) 0%, var(--petrol-blue) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .trust-item:hover::before {
+            opacity: 1;
+        }
+
+        .trust-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(217, 72, 15, 0.25), 0 6px 15px rgba(44, 110, 125, 0.15);
+            border-color: var(--burnt-orange);
+            background: linear-gradient(135deg, rgba(217, 72, 15, 0.08) 0%, rgba(44, 110, 125, 0.08) 100%);
+        }
+
+        .trust-item i {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--burnt-orange);
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .trust-item:hover i {
+            transform: scale(1.1) rotate(5deg);
+            color: var(--petrol-blue);
+        }
+
+        .trust-item h4 {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .trust-item p {
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ==================== Services Section ==================== */
+        .services {
+            background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header h2 {
+            color: var(--burnt-orange);
+            margin-bottom: 0.8rem;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+        }
+
+        .section-header p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid rgba(44, 110, 125, 0.15);
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--petrol-blue) 0%, var(--burnt-orange) 100%);
+            border-radius: 0 0 12px 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover::after {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(44, 110, 125, 0.2), 0 6px 15px rgba(217, 72, 15, 0.15);
+            border-color: var(--petrol-blue);
+        }
+
+        .service-card i {
+            font-size: clamp(2.5rem, 5vw, 3.2rem);
+            color: var(--petrol-blue);
+            margin-bottom: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover i {
+            transform: scale(1.1) rotate(-5deg);
+            color: var(--burnt-orange);
+        }
+
+        .service-card h3 {
+            margin-bottom: 0.8rem;
+            color: var(--charcoal);
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            font-weight: 700;
+        }
+
+        .service-card p {
+            font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* ==================== Portfolio Section ==================== */
+        .portfolio {
+            background-color: white;
+        }
+
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.7rem 1.5rem;
+            background: white;
+            border: 2px solid rgba(217, 72, 15, 0.2);
+            color: var(--charcoal);
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background: rgba(217, 72, 15, 0.1);
+            border-color: var(--burnt-orange);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--burnt-orange);
+            color: white;
+            border-color: var(--burnt-orange);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            height: 260px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .portfolio-item:hover {
+            border-color: var(--burnt-orange);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(217, 72, 15, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .portfolio-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(217, 72, 15, 0.7) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .portfolio-item:hover::after {
+            opacity: 1;
+        }
+
+        .portfolio-category {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: white;
+            color: var(--burnt-orange);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-item:hover .portfolio-category {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .portfolio-item.hidden {
+            display: none;
+        }
+
+        /* ==================== CTA Section ==================== */
+        .final-cta {
+            background-color: var(--petrol-blue);
+            padding: 3.5rem 0;
+            text-align: center;
+            color: white;
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 0.75rem;
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+        }
+
+        .final-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .btn-primary {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            padding: 14px 28px;
+        }
+
+        /* ==================== Footer ==================== */
+        footer {
+            background-color: var(--charcoal);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 2.5rem 0 1.5rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.5rem;
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+        }
+
+        /* ==================== Reveal Animation ==================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==================== Top Header ==================== */
+        .top-header {
+            background-color: var(--charcoal);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--petrol-blue);
+        }
+
+        .top-header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .top-header h3 {
+            color: white;
+            font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+            font-weight: 700;
+            margin: 0;
+            flex: 1;
+            text-align: center;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .header-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        /* ==================== Side Navigation ==================== */
+        .side-nav {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+            background: white;
+            padding: 15px 10px;
+            border-radius: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .side-nav a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            margin: 8px 0;
+            border-radius: 50%;
+            background: var(--light-gray);
+            color: var(--charcoal);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .side-nav a:hover,
+        .side-nav a.active {
+            background: var(--petrol-blue);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .side-nav a i {
+            font-size: 1.2rem;
+        }
+
+        .side-nav a::before {
+            content: attr(data-label);
+            position: absolute;
+            right: 60px;
+            background: var(--charcoal);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .side-nav a:hover::before {
+            opacity: 1;
+            right: 55px;
+        }
+
+        /* ==================== Mobile Menu Toggle ==================== */
+        .menu-toggle {
+            display: none;
+            width: 45px;
+            height: 45px;
+            background: var(--burnt-orange);
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(217, 72, 15, 0.3);
+            transition: all 0.3s ease;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .menu-toggle:active {
+            transform: scale(0.95);
+        }
+
+        .menu-toggle i {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .nav-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+        }
+
+        /* ==================== Responsive Design ==================== */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .side-nav {
+                right: -100px;
+                transition: right 0.3s ease;
+            }
+
+            .side-nav.active {
+                right: 10px;
+            }
+
+            .side-nav a {
+                width: 38px;
+                height: 38px;
+                margin: 6px 0;
+            }
+
+            .side-nav a i {
+                font-size: 1rem;
+            }
+
+            .side-nav a::before {
+                display: none;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+
+            .top-header {
+                padding: 10px 0;
+            }
+
+            .top-header .container {
+                gap: 10px;
+            }
+
+            .top-header h3 {
+                font-size: 1rem;
+            }
+
+            .header-logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .menu-toggle {
+                display: flex;
+                width: 40px;
+                height: 40px;
+            }
+
+            .menu-toggle i {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: 1.5rem 0.75rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+                padding: 12px 16px;
+                font-size: 0.9rem;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.2rem;
+            }
+
+            .trust-item {
+                padding: 1.2rem 0.8rem;
+            }
+
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-item {
+                height: 200px;
+            }
+
+            .final-cta {
+                padding: 2.5rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                min-height: 75vh;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+
+            .trust-item {
+                padding: 1.5rem 1rem;
+            }
+
+            .trust-item i {
+                font-size: 2.5rem;
+            }
+
+            .service-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .portfolio-item {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <h3>دار التشطيب</h3>
+            <img src="https://i.ibb.co/n8cs9pJs/image.png" alt="دار التشطيب" class="header-logo">
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <a href="#home" data-label="الرئيسية">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="#trust" data-label="لماذا نحن">
+            <i class="fas fa-award"></i>
+        </a>
+        <a href="#services" data-label="خدماتنا">
+            <i class="fas fa-tools"></i>
+        </a>
+        <a href="#portfolio" data-label="أعمالنا">
+            <i class="fas fa-images"></i>
+        </a>
+        <a href="#contact" data-label="تواصل معنا">
+            <i class="fas fa-phone"></i>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 style="font-size: clamp(1.75rem, 5vw, 3rem); line-height: 1.4; margin-bottom: 1.5rem; font-weight: 800;">لياسة وبروفايل<br>واجهات وداخلي</h1>
+            <p style="font-size: clamp(1.25rem, 2.5vw, 1.5rem); line-height: 1.7; margin-bottom: 2rem; font-weight: 600;">جودة عالية | التزام بالمواعيد | أسعار تنافسية</p>
+            <div class="cta-buttons">
+                <a href="tel:+966548786126" class="btn btn-primary" style="font-size: clamp(0.95rem, 1.8vw, 1.1rem); padding: 14px 28px;">
+                    <i class="fas fa-phone-alt"></i>
+                    احجز معاينة الآن
+                </a>
+                <a href="https://wa.me/966548786126" target="_blank" class="btn btn-secondary" style="font-size: clamp(0.95rem, 1.8vw, 1.1rem); padding: 14px 28px;">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل واتساب
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust Indicators -->
+    <section class="trust" id="trust">
+        <div class="container">
+            <h2 style="text-align: center; font-size: clamp(1.5rem, 4vw, 2.2rem); margin-bottom: 1rem; font-weight: 800; color: #d9480f;">ليه لازم تشتغل معانا؟</h2>
+            <p style="text-align: center; font-size: clamp(1rem, 2vw, 1.2rem); margin-bottom: 3rem; color: #555;">نقدم لك أفضل خدمة بأعلى معايير الجودة</p>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="fas fa-award"></i>
+                    <h4>خبرة طويلة</h4>
+                    <p>سنوات من العمل المتقن</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-check"></i>
+                    <h4>جودة مضمونة</h4>
+                    <p>أفضل المواد والتقنيات</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>التزام تام</h4>
+                    <p>نحترم المواعيد المحددة</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-eye"></i>
+                    <h4>معاينة مجانية</h4>
+                    <p>نصلك أينما كنت</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>🏗️ خدماتنا المميزة</h2>
+                <p>نقدم حلول شاملة واحترافية لجميع احتياجات اللياسة والبروفايل بأعلى معايير الجودة</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-home"></i>
+                    <h3>لياسة داخلية</h3>
+                    <p>تشطيب داخلي ناعم ومستوي، جاهز للدهان والديكور</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-building"></i>
+                    <h3>واجهات خارجية</h3>
+                    <p>بروفايل وواجهات بأحدث التصاميم والألوان</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-tools"></i>
+                    <h3>ترميم وإصلاح</h3>
+                    <p>معالجة التشققات وإصلاح العيوب بدقة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>نماذج من أعمالنا</h2>
+                <p>فخورون بثقة عملائنا في كافة أنحاء الطائف</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="liyasa">لياسة</button>
+                <button class="filter-btn" data-filter="facades">واجهات خارجية</button>
+                <button class="filter-btn" data-filter="interior">تشطيب داخلي</button>
+                <button class="filter-btn" data-filter="profile">بروفايل</button>
+            </div>
+
+            <div class="portfolio-grid reveal">
+                <div class="portfolio-item" data-category="liyasa">
+                    <img src="https://i.ibb.co/7JvzZDVg/Whats-App-Image-2026-01-11-at-8-47-35-PM-2.jpg" alt="عمل لياسة 1" loading="lazy">
+                    <span class="portfolio-category">لياسة</span>
+                </div>
+                <div class="portfolio-item" data-category="liyasa">
+                    <img src="https://i.ibb.co/RTDvzpDp/Whats-App-Image-2026-01-11-at-8-47-35-PM-3.jpg" alt="عمل لياسة 2" loading="lazy">
+                    <span class="portfolio-category">لياسة</span>
+                </div>
+                <div class="portfolio-item" data-category="liyasa">
+                    <img src="https://i.ibb.co/N2cG8CNg/Whats-App-Image-2026-01-11-at-8-47-35-PM-5.jpg" alt="عمل لياسة 3" loading="lazy">
+                    <span class="portfolio-category">لياسة</span>
+                </div>
+                <div class="portfolio-item" data-category="facades">
+                    <img src="https://i.ibb.co/h1TBDn90/Whats-App-Image-2026-01-11-at-8-47-36-PM-1.jpg" alt="واجهة خارجية 1" loading="lazy">
+                    <span class="portfolio-category">واجهات خارجية</span>
+                </div>
+                <div class="portfolio-item" data-category="facades">
+                    <img src="https://i.ibb.co/JFc7hXYN/Whats-App-Image-2026-01-11-at-8-47-36-PM-2.jpg" alt="واجهة خارجية 2" loading="lazy">
+                    <span class="portfolio-category">واجهات خارجية</span>
+                </div>
+                <div class="portfolio-item" data-category="interior">
+                    <img src="https://i.ibb.co/MLFhGr5/Whats-App-Image-2026-01-11-at-8-47-36-PM.jpg" alt="تشطيب داخلي 1" loading="lazy">
+                    <span class="portfolio-category">تشطيب داخلي</span>
+                </div>
+                <div class="portfolio-item" data-category="interior">
+                    <img src="https://i.ibb.co/xqZ2WCrY/Whats-App-Image-2026-01-11-at-8-47-37-PM-1.jpg" alt="تشطيب داخلي 2" loading="lazy">
+                    <span class="portfolio-category">تشطيب داخلي</span>
+                </div>
+                <div class="portfolio-item" data-category="profile">
+                    <img src="https://i.ibb.co/3mKL7YsQ/Whats-App-Image-2026-01-11-at-8-47-37-PM-2.jpg" alt="بروفايل 1" loading="lazy">
+                    <span class="portfolio-category">بروفايل</span>
+                </div>
+                <div class="portfolio-item" data-category="profile">
+                    <img src="https://i.ibb.co/QvNV98TQ/Whats-App-Image-2026-01-11-at-8-47-37-PM-3.jpg" alt="بروفايل 2" loading="lazy">
+                    <span class="portfolio-category">بروفايل</span>
+                </div>
+                <div class="portfolio-item" data-category="liyasa">
+                    <img src="https://i.ibb.co/4Z6YWRDs/Whats-App-Image-2026-01-11-at-8-47-37-PM-4.jpg" alt="عمل لياسة 4" loading="lazy">
+                    <span class="portfolio-category">لياسة</span>
+                </div>
+                <div class="portfolio-item" data-category="facades">
+                    <img src="https://i.ibb.co/yBX5VjfJ/Whats-App-Image-2026-01-11-at-8-47-37-PM-5.jpg" alt="واجهة خارجية 3" loading="lazy">
+                    <span class="portfolio-category">واجهات خارجية</span>
+                </div>
+                <div class="portfolio-item" data-category="interior">
+                    <img src="https://i.ibb.co/KjjKvCnm/Whats-App-Image-2026-01-11-at-8-47-37-PM-6.jpg" alt="تشطيب داخلي 3" loading="lazy">
+                    <span class="portfolio-category">تشطيب داخلي</span>
+                </div>
+                <div class="portfolio-item" data-category="profile">
+                    <img src="https://i.ibb.co/rKDLXyhL/Whats-App-Image-2026-01-11-at-8-47-38-PM-1.jpg" alt="بروفايل 3" loading="lazy">
+                    <span class="portfolio-category">بروفايل</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="container reveal">
+            <h2>هل تبحث عن جودة واحترافية؟</h2>
+            <p>تواصل معنا الآن واحصل على استشارة مجانية وعرض سعر فوري</p>
+            <a href="tel:+966548786126" class="btn btn-primary">
+                <i class="fas fa-phone-alt"></i>
+                اطلب الخدمة الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> الطائف، المملكة العربية السعودية</p>
+                <p dir="ltr"><i class="fas fa-phone"></i> +966 54 878 6126</p>
+            </div>
+            <p style="margin-top: 1rem;">جميع الحقوق محفوظة © <a href="https://wa.me/201032603653" target="_blank" style="color: #d9480f; text-decoration: none; font-weight: 700; transition: color 0.3s ease;" onmouseover="this.style.color='#2c6e7d'" onmouseout="this.style.color='#d9480f'">A.Ala3m</a> 2026</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Scroll Reveal Effect
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 100;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        
+        // Initial reveal on page load
+        document.addEventListener('DOMContentLoaded', reveal);
+
+        // Side Navigation Active State
+        const sections = document.querySelectorAll('section, header');
+        const navLinks = document.querySelectorAll('.side-nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const sideNav = document.getElementById('sideNav');
+        const navOverlay = document.getElementById('navOverlay');
+        const menuIcon = menuToggle.querySelector('i');
+
+        function toggleMenu() {
+            sideNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            
+            if (sideNav.classList.contains('active')) {
+                navOverlay.style.display = 'block';
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                setTimeout(() => {
+                    navOverlay.style.display = 'none';
+                }, 300);
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking on a nav link (mobile)
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.side-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Portfolio Filter System
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter items with animation
+                portfolioItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || category === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Add initial styles for animation
+        portfolioItems.forEach(item => {
+            item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        });
+
+        // Track CTA clicks (add your analytics code here)
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('CTA Button Clicked:', this.textContent.trim());
+                // Add Google Analytics or Facebook Pixel tracking here
+                // Example: gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Phone Call'});
+            });
+        });
+
+        document.querySelectorAll('.btn-secondary').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('WhatsApp Button Clicked');
+                // Add tracking here
+            });
+        });
+    </script>
+</body>
+</html>
